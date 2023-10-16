@@ -1,6 +1,7 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
- import Navbar from './NavBar'; 
- import Home from './Home';
+import { BrowserRouter as Router, Switch, Route } from 
+'react-router-dom';
+import Home from './Home';
+  import NavBar from './NavBar'; 
   import Products from './Products';
    import AboutUs from './AboutUs';
     import ProductDetails from './ProductDetails'; 
@@ -9,13 +10,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 {
       return (
       <Router>
-        <div className="App">
-          <Navbar/>
+        <div className= "App">
+          <NavBar/>
           <Switch>
-            <Route exact path="/"components={Home}/>
-            <Route exact path="/product"components={Products}/>
-            <Route path="/products/:id"components={ProductDetails}/>
-            <Route path="/about"components={AboutUs}/>
+            <Route exact path="/"component={Home}/>
+            <Route exact path="/product"component={Products}/>
+            <Route path="/products/:id"component={ProductDetails}/>
+            <Route path="/aboutus"component={AboutUs}/>
 
           </Switch>
 
